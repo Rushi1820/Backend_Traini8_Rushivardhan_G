@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a30f627f-06d9-4e20-a283-0b082e38c791",
+		"name": "MVP Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25460099"
+	},
+	"item": [
+		{
+			"name": "CreateCenter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"centerName\": \"BBA Training Center\",\r\n    \"centerCode\": \"ETC114\",\r\n    \"address\": {\r\n        \"detailedAddress\": \"3 Training Street, Training City\",\r\n        \"city\": \"Hyderabad\",\r\n        \"state\": \"Telangana\",\r\n        \"pincode\": \"500001\"\r\n    },\r\n    \"studentCapacity\": 100,\r\n    \"coursesOffered\": [\r\n        \"Course 1\",\r\n        \"Course 2\",\r\n        \"Course 3\",\r\n        \"Course 4\"\r\n    ],\r\n    \"contactEmail\": \"contact@example.com\",\r\n    \"contactPhone\": \"9780123556\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/training-centers/Create"
+			},
+			"response": []
+		},
+		{
+			"name": "GetallCentres",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCenterByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": {\r\n        \"detailedAddress\": \"3 Training Street,Hitech city,Training City\",\r\n        \"city\": \"Hyderabad\",\r\n        \"state\": \"Telangana\",\r\n        \"pincode\": \"500001\"\r\n    },\r\n    \"studentCapacity\": 1000,\r\n    \"coursesOffered\": [\r\n        \"Course 1\",\r\n        \"Course 2\",\r\n        \"Course 3\",\r\n        \"Course 4\",\r\n        \"Course 5\"\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/training-centers/UpdateCenterById/2"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCenterByID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteALLCenters",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

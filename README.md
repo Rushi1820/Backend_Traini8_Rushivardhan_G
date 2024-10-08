@@ -20,10 +20,8 @@ Functionality:
 Java Spring Boot for building the RESTful API.
 PostgreSQL for Database management.
 Postman for API documentation.
-Render for Postgres and Redis Deployment
-Docker for creating a image for spring boot application
-Docker repository: Name of the Repository: rushivardhan/mvp-assignment Pull command: docker pull rushivardhan/mvp-assignment:latest Run command: docker run -p 8080:8080 rushivardhan/mvp-assignment:latest
+Render for Postgres 
 
-Then please execute the postman requests for the working of the flow. Please find the attached postman collection in the project folder
+Please find the attached postman collection in the project folder
 
 PLEASE READ THE ATTACHED README PDF FOR MORE DETAIL INFORMATION
